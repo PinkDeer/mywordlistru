@@ -1,6 +1,6 @@
 <h1>Words</h1>
 
-<%= @words.each do |word| %>
-  <h2><%= link_to word.title, word_path(word) %></h2>
+<% @words.each do |word| %>
+  <h2><%= link_to word.title, word %></h2>
   <h3><%= word.translation %></h3>
 <% end %>
