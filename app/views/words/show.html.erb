@@ -1,0 +1,4 @@
+<h1><%= @word.title %></h1>
+<p><%= @word.translation %> </p>
+<%= link_to "Edit", edit_word_path(@word) %>
+<%= link_to "Delete", word_path(@word), method: :delete, data: { confirm: "Are you sure?" } %>
