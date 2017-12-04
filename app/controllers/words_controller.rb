@@ -28,7 +28,7 @@ class WordsController < ApplicationController
     if @word.update_attributes(word_params)
       redirect_to @word
     else
-      reder :edit
+      render :edit
     end
   end
 
