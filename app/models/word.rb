@@ -1,4 +1,7 @@
 class Word < ApplicationRecord
+
+  validates :title, :translation, presence: true
+
   before_save :capitalize_fields
 
   def capitalize_fields
