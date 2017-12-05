@@ -8,8 +8,24 @@
   </head>
 
   <body>
-    <%= link_to 'Список всех слов', words_path %> |
-    <%= link_to 'Добавить слово', new_word_path %>
-    <%= yield %>
+
+    <nav class="navbar navbar-default" role="navigation">
+      <div class="container">
+        <div class="col-md-8 col-md-offset-2">
+          <a><%= link_to 'MyWordList', root_path, class: "navbar-brand" %></a>
+            <ul class="nav navbar-nav navbar-right">
+                <li><%= link_to 'Добавить слово', new_word_path, class: "navbar-brand" %></li>
+            </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+        <%= yield %>
+      </div>
+    </div>
+
   </body>
 </html>
