@@ -1,4 +1,3 @@
-
 <% if @word.errors.any? %>
   <div class="alert alert-danger">
     <h5><%= t('common.errors') %></h5>
@@ -13,5 +12,5 @@
 <%= simple_form_for @word do |f| %>
   <%= f.input :title %>
   <%= f.input :translation %>
-  <%= f.button :submit %>
+  <%= f.button :submit, 'Добавить' %>
 <% end %>
