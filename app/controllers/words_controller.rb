@@ -17,7 +17,8 @@ class WordsController < ApplicationController
     @word = Word.new(word_params)
     if @word.save
      redirect_to @word
-    else :new
+    else
+      render :new
     end
   end
 
