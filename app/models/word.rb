@@ -1,6 +1,5 @@
 class Word < ApplicationRecord
 
-  validates :title, uniqueness: true
   validates :title, :translation, presence: true
   validates_format_of :title, with: /[a-zA-Z]/i, on: :create
 

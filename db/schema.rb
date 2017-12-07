@@ -17,6 +17,7 @@ ActiveRecord::Schema.define(version: 20171129220602) do
     t.text "translation"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["title"], name: "index_words_on_title", unique: true
   end
 
 end
