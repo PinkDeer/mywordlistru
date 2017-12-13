@@ -13,7 +13,7 @@
       <div class="container">
         <div class="col-md-8 col-md-offset-2">
           <a><%= link_to 'MyWordList', root_path, class: "navbar-brand" %></a>
-            <ul class="nav navbar-nav navbar-right">
+            <ul class="nav navbar-nav navbar-right">z
                 <li><%= link_to 'Добавить слово', new_word_path, class: "navbar-brand" %></li>
             </ul>
         </div>
@@ -23,6 +23,7 @@
     <div class="container">
       <div class="row">
         <div class="col-md-8 col-md-offset-2">
+          <h3>Всего слов: <%= @words.size %></h3>
         <%= yield %>
       </div>
     </div>
