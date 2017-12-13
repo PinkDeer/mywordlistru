@@ -7,6 +7,7 @@ class CreateWords < ActiveRecord::Migration[5.1]
       t.timestamps
     end
 
-    add_index :words, :title, unique: true
+    # add_index :words, :title, unique: true
   end
 end
+  
